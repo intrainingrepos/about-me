@@ -49,3 +49,16 @@ if(answerFour === 'no' || answerFour === 'n'){
     alert('Actually I love to be outside');
     console.log('The user got Question four wrong');
 }
+
+//this is question five
+var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
+
+if(answerFive === 'no' || answerFive === 'n'){
+    alert('Ya, Spring weather is undecisive');
+    console.log('The user got Question five right');
+}else{
+    alert('No Spring is weird and I kinda hate it');
+    console.log('The user got Question five wrong');
+}
+
+
