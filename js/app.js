@@ -28,3 +28,13 @@ if(answerTwo === 'yes' || answerTwo === 'y'){
     console.log('The user got Question Two wrong');
 }
 
+//this is question three
+var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
+
+if(answerThree === 'yes' || answerThree === 'y'){
+    alert('Oh my gosh is that ever true!!');
+    console.log('The user got Question three right');
+}else{
+    alert('Sorry but I actually need chocolate like I need air to breathe!');
+    console.log('The user got Question three wrong');
+}
