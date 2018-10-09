@@ -38,3 +38,14 @@ if(answerThree === 'yes' || answerThree === 'y'){
     alert('Sorry but I actually need chocolate like I need air to breathe!');
     console.log('The user got Question three wrong');
 }
+
+//this is question four 
+var answerFour = prompt('Would I rather stay inside rather than outside?').toLowerCase();
+
+if(answerFour === 'no' || answerFour === 'n'){
+    alert('That is right! I love doing just about anything outside!');
+    console.log('The user got Question four right');
+}else{
+    alert('Actually I love to be outside');
+    console.log('The user got Question four wrong');
+}
