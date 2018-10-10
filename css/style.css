@@ -1,4 +1,55 @@
 body {
-    background: teal;
-    color: black;
+    background-color: teal;
+    background:linear-gradient(rgb(4, 82, 82), rgb(16, 110, 110), rgb(113, 159, 165));
+    color:silver;
+}
+p {
+    color:black;
+    font-size:20px;
+}
+h1 {
+    text-align: center;
+    font-weight:bold;
+    font-variant:small-caps;
+    font-size:40px;
+    background-color:rgba(218, 165, 32, 0.623);
+    border:solid gray;
+}
+h2 {
+    text-align: center;
+    font-weight:bold;
+    font-style:oblique;
+    font-size:25px;
+    text-decoration-line:underline;
+}
+h3 {
+    text-align: center;
+    font-weight:bold;
+    font-style:oblique;
+}
+.job {
+    color:black;
+    font-size:20px;
+}
+.education {
+    color:black;
+    font-size:20px;
+}
+.program {
+    color:black;
+    margin-left:50px;
+}
+.table {
+    display:table;
+    table-layout:fixed;
+}
+.strength {
+    color:black;
+    font-size:20px;
+    text-align:start;
+    margin-left:110px;
+}
+#bottom {
+    background-color:rgb(6, 6, 61);
+    text-align: center;
 }
