@@ -1,5 +1,7 @@
 'use strict';
 
+var numCorrect = 0;
+
 alert('Welcome! Let us play a guessing game so that you can get to know me better!');
 
 var userName = prompt('What is your name?');
@@ -11,17 +13,19 @@ var answerOne = prompt('Do I have more than one child?').toLowerCase();
 
 if (answerOne === 'no' || answerOne === 'n'){
     alert('You got it right! I only have one little girl!');
+    numCorrect ++;
     console.log('The user got Question One correct!');
 } else {
     alert('Nope you are wrong, I only have one child');
     console.log('The user got Question One wrong');
 }
 
-//this iis question two
+//this is question two
 var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
 
 if(answerTwo === 'yes' || answerTwo === 'y'){
     alert('Yay you got it right! I absolutely LOVE cows!!');
+    numCorrect ++;
     console.log('The user got Question Two right');
 } else {
     alert('No thats definitely not right');
@@ -33,6 +37,7 @@ var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
 
 if(answerThree === 'yes' || answerThree === 'y'){
     alert('Oh my gosh is that ever true!!');
+    numCorrect ++;
     console.log('The user got Question three right');
 } else {
     alert('Sorry but I actually need chocolate like I need air to breathe!');
@@ -44,6 +49,7 @@ var answerFour = prompt('Would I rather stay inside rather than outside?').toLow
 
 if(answerFour === 'no' || answerFour === 'n'){
     alert('That is right! I love doing just about anything outside!');
+    numCorrect ++;
     console.log('The user got Question four right');
 } else {
     alert('Actually I love to be outside');
@@ -55,6 +61,7 @@ var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
 
 if(answerFive === 'no' || answerFive === 'n'){
     alert('Ya, Spring weather is undecisive');
+    numCorrect ++;
     console.log('The user got Question five right');
 } else {
     alert('No Spring is weird and I kinda hate it');
@@ -73,6 +80,7 @@ if(answerSix < 2 || answerSix > 2){
     console.log('The user got Question six wrong');
 } else if(answerSix === 2){
     alert('How did you know?! I have 2 awesome dogs!');
+    numCorrect ++;
     console.log('The user got Question six right!');
 } 
 if(counter === 0){ 
@@ -84,33 +92,28 @@ if(counter === 0){
 //this is question seven...I got this!
 var counter = 6;
 var siobhanColors = ['teal', 'gold', 'green', 'blue', 'aqua'];
-
-while (counter > 0){
+var passed = true;
+while (counter > 0 && passed){
     var answerSeven = prompt('What do you think is one of my favorite colors?').toLowerCase();
     console.log(counter);
-    var passed;
+    // var passed;
     for(var i = 0; i < siobhanColors.length; i++){
     if(siobhanColors[i] === answerSeven){
-        passed = true;
-        break
+        alert('You\'re right that is one of my favorite colors!!');
+        passed = false;
+        numCorrect ++;
+        console.log('The user got the Question right');
 }
 }
-}
-if(passed) {
-    alert('You\'re right that is one of my favorite colors!!');
-    console.log('The user got the Question right');
-    break
-} else {
+    counter --;
+if(counter > 0 && passed) {
     alert('No I\'m sorry I don\'t actually love that color...');
     console.log('The user got the Question wrong');
-    counter --;
 }
-if(counter === 0){
-    alert('Thanks for guessing but here are some of my favorite colors: blue, aqua, teal, green, and gold!');
 }
+alert('Thanks for guessing but here are some of my favorite colors: blue, aqua, teal, green, and gold!');
 
 //this tells the user how many questions they got right and wrong
-var answersCollected = 
-
+alert(userName + ' you got ' + numCorrect + ' out of 7! Thanks for playing!');
 
 
