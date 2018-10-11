@@ -68,64 +68,71 @@ alert('Welcome ' + userName + '! How about we get started!');
 // }
 // questionFour();
 
-//this is question five
-function questionFive() {
-    var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
+// //this is question five
+// function questionFive() {
+//     var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
 
-    if(answerFive === 'no' || answerFive === 'n'){
-        alert('Ya, Spring weather is undecisive');
-        numCorrect ++;
-        console.log('The user got Question five right');
-    } else {
-        alert('No Spring is weird and I kinda hate it');
-        console.log('The user got Question five wrong');
-    }
-}
-questionFive();
+//     if(answerFive === 'no' || answerFive === 'n'){
+//         alert('Ya, Spring weather is undecisive');
+//         numCorrect ++;
+//         console.log('The user got Question five right');
+//     } else {
+//         alert('No Spring is weird and I kinda hate it');
+//         console.log('The user got Question five wrong');
+//     }
+// }
+// questionFive();
 
 // //this is question six....oh boy here we go
-// var counter = 4;
+// function questionSix() {
+//     var counter = 4;
 
-// while (counter > 0 && answerSix != 2){
-//     var answerSix = Number(prompt('How many animals would you think I have?'));
-//     console.log(counter);
-//     counter --;
-// if(answerSix < 2 || answerSix > 2){
-//     alert('Nope sorry, how about you guess again!');
-//     console.log('The user got Question six wrong');
-// } else if(answerSix === 2){
-//     alert('How did you know?! I have 2 awesome dogs!');
-//     numCorrect ++;
-//     console.log('The user got Question six right!');
-// } 
-// if(counter === 0){ 
-//     alert('We will just move on, but I have 2 awesome dogs.');
-//     console.log('The user ran out of guesses');
-// }
-// }
-
-// //this is question seven...I got this!
-// var counter = 6;
-// var siobhanColors = ['teal', 'gold', 'green', 'blue', 'aqua'];
-// var passed = true;
-// while (counter > 0 && passed){
-//     var answerSeven = prompt('What do you think is one of my favorite colors?').toLowerCase();
-//     console.log(counter);
-//     // var passed;
-//     for(var i = 0; i < siobhanColors.length; i++){
-//     if(siobhanColors[i] === answerSeven){
-//         alert('You\'re right that is one of my favorite colors!!');
-//         passed = false;
+//     while (counter > 0 && answerSix != 2){
+//         var answerSix = Number(prompt('How many animals would you think I have?'));
+//         console.log(counter);
+//         counter --;
+//     if(answerSix < 2 || answerSix > 2){
+//         alert('Nope sorry, how about you guess again!');
+//         console.log('The user got Question six wrong');
+//     } else if(answerSix === 2){
+//         alert('How did you know?! I have 2 awesome dogs!');
 //         numCorrect ++;
-//         console.log('The user got the Question right');
+//         console.log('The user got Question six right!');
+//     } 
+//     if(counter === 0){ 
+//         alert('We will just move on, but I have 2 awesome dogs.');
+//         console.log('The user ran out of guesses');
+//     }
+//     }
 // }
-// }
-//     counter --;
-// if(counter > 0 && passed) {
-//     alert('No I\'m sorry I don\'t actually love that color...');
-//     console.log('The user got the Question wrong');
-// }
-// }
+// questionSix();
+
+//this is question seven...I got this!
+function questionSeven() {
+    var counter = 6;
+    var siobhanColors = ['teal', 'gold', 'green', 'blue', 'aqua'];
+    var passed = true;
+    while (counter > 0 && passed){
+        var answerSeven = prompt('What do you think is one of my favorite colors?').toLowerCase();
+        console.log(counter);
+        // var passed;
+        for(var i = 0; i < siobhanColors.length; i++){
+        if(siobhanColors[i] === answerSeven){
+            alert('You\'re right that is one of my favorite colors!!');
+            passed = false;
+            numCorrect ++;
+            console.log('The user got the Question right');
+    }
+    }
+        counter --;
+    if(counter > 0 && passed) {
+        alert('No I\'m sorry I don\'t actually love that color...');
+        console.log('The user got the Question wrong');
+    }
+    }
+}
+questionSeven();
+
 // alert('Thanks for guessing but here are some of my favorite colors: blue, aqua, teal, green, and gold!');
 
 // //this tells the user how many questions they got right and wrong
