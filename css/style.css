@@ -6,6 +6,8 @@ body {
 p {
     color:black;
     font-size:20px;
+    border:10px solid rgba(27, 26, 26, 0.205);
+    padding:10px;
 }
 h1 {
     text-align: center;
@@ -14,6 +16,12 @@ h1 {
     font-size:40px;
     background-color:rgba(218, 165, 32, 0.623);
     border:solid gray;
+    border-radius:20px;
+}
+#picture {
+    border:30px black;
+    width:35%;
+    margin-left:300px;
 }
 h2 {
     text-align: center;
@@ -21,6 +29,7 @@ h2 {
     font-style:oblique;
     font-size:25px;
     text-decoration-line:underline;
+    text-shadow:10px 5px 5px rgb(31, 30, 30);
 }
 h3 {
     text-align: center;
