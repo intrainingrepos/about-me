@@ -23,7 +23,7 @@ alert('Welcome ' + userName + '! How about we get started!');
 // }
 // questionOne();
 
-//this is question two
+// //this is question two
 // function questionTwo() {
 //     var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
 
@@ -39,43 +39,49 @@ alert('Welcome ' + userName + '! How about we get started!');
 // questionTwo();
 
 // //this is question three
-function questionThree() {
-    var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
+// function questionThree() {
+//     var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
 
-    if(answerThree === 'yes' || answerThree === 'y'){
-        alert('Oh my gosh is that ever true!!');
-        numCorrect ++;
-        console.log('The user got Question three right');
-    } else {
-        alert('Sorry but I actually need chocolate like I need air to breathe!');
-        console.log('The user got Question three wrong');
-    }
-}
-questionThree();
+//     if(answerThree === 'yes' || answerThree === 'y'){
+//         alert('Oh my gosh is that ever true!!');
+//         numCorrect ++;
+//         console.log('The user got Question three right');
+//     } else {
+//         alert('Sorry but I actually need chocolate like I need air to breathe!');
+//         console.log('The user got Question three wrong');
+//     }
+// }
+// questionThree();
 
 // //this is question four 
-// var answerFour = prompt('Would I rather stay inside rather than outside?').toLowerCase();
+// function questionFour() {
+//     var answerFour = prompt('Would I rather stay inside rather than outside?').toLowerCase();
 
-// if(answerFour === 'no' || answerFour === 'n'){
-//     alert('That is right! I love doing just about anything outside!');
-//     numCorrect ++;
-//     console.log('The user got Question four right');
-// } else {
-//     alert('Actually I love to be outside');
-//     console.log('The user got Question four wrong');
+//     if(answerFour === 'no' || answerFour === 'n'){
+//         alert('That is right! I love doing just about anything outside!');
+//         numCorrect ++;
+//         console.log('The user got Question four right');
+//     } else {
+//         alert('Actually I love to be outside');
+//         console.log('The user got Question four wrong');
+//     }
 // }
+// questionFour();
 
-// //this is question five
-// var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
+//this is question five
+function questionFive() {
+    var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
 
-// if(answerFive === 'no' || answerFive === 'n'){
-//     alert('Ya, Spring weather is undecisive');
-//     numCorrect ++;
-//     console.log('The user got Question five right');
-// } else {
-//     alert('No Spring is weird and I kinda hate it');
-//     console.log('The user got Question five wrong');
-// }
+    if(answerFive === 'no' || answerFive === 'n'){
+        alert('Ya, Spring weather is undecisive');
+        numCorrect ++;
+        console.log('The user got Question five right');
+    } else {
+        alert('No Spring is weird and I kinda hate it');
+        console.log('The user got Question five wrong');
+    }
+}
+questionFive();
 
 // //this is question six....oh boy here we go
 // var counter = 4;
