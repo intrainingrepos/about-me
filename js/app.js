@@ -24,31 +24,34 @@ alert('Welcome ' + userName + '! How about we get started!');
 // questionOne();
 
 //this is question two
-function questionTwo() {
-    var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
+// function questionTwo() {
+//     var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
 
-    if(answerTwo === 'yes' || answerTwo === 'y'){
-        alert('Yay you got it right! I absolutely LOVE cows!!');
-        numCorrect ++;
-        console.log('The user got Question Two right');
-    } else {
-        alert('No thats definitely not right');
-        console.log('The user got Question Two wrong');
-    }
-    }
-questionTwo();
+// if(answerTwo === 'yes' || answerTwo === 'y'){
+//     alert('Yay you got it right! I absolutely LOVE cows!!');
+//     numCorrect ++;
+//     console.log('The user got Question Two right');
+// } else {
+//     alert('No thats definitely not right');
+//     console.log('The user got Question Two wrong');
+// }
+// }
+// questionTwo();
 
 // //this is question three
-// var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
+function questionThree() {
+    var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
 
-// if(answerThree === 'yes' || answerThree === 'y'){
-//     alert('Oh my gosh is that ever true!!');
-//     numCorrect ++;
-//     console.log('The user got Question three right');
-// } else {
-//     alert('Sorry but I actually need chocolate like I need air to breathe!');
-//     console.log('The user got Question three wrong');
-// }
+    if(answerThree === 'yes' || answerThree === 'y'){
+        alert('Oh my gosh is that ever true!!');
+        numCorrect ++;
+        console.log('The user got Question three right');
+    } else {
+        alert('Sorry but I actually need chocolate like I need air to breathe!');
+        console.log('The user got Question three wrong');
+    }
+}
+questionThree();
 
 // //this is question four 
 // var answerFour = prompt('Would I rather stay inside rather than outside?').toLowerCase();
