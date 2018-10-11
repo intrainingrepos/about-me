@@ -12,7 +12,7 @@ var answerOne = prompt('Do I have more than one child?').toLowerCase();
 if (answerOne === 'no' || answerOne === 'n'){
     alert('You got it right! I only have one little girl!');
     console.log('The user got Question One correct!');
-}else{
+} else {
     alert('Nope you are wrong, I only have one child');
     console.log('The user got Question One wrong');
 }
@@ -23,7 +23,7 @@ var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
 if(answerTwo === 'yes' || answerTwo === 'y'){
     alert('Yay you got it right! I absolutely LOVE cows!!');
     console.log('The user got Question Two right');
-}else{
+} else {
     alert('No thats definitely not right');
     console.log('The user got Question Two wrong');
 }
@@ -34,7 +34,7 @@ var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
 if(answerThree === 'yes' || answerThree === 'y'){
     alert('Oh my gosh is that ever true!!');
     console.log('The user got Question three right');
-}else{
+} else {
     alert('Sorry but I actually need chocolate like I need air to breathe!');
     console.log('The user got Question three wrong');
 }
@@ -45,7 +45,7 @@ var answerFour = prompt('Would I rather stay inside rather than outside?').toLow
 if(answerFour === 'no' || answerFour === 'n'){
     alert('That is right! I love doing just about anything outside!');
     console.log('The user got Question four right');
-}else{
+} else {
     alert('Actually I love to be outside');
     console.log('The user got Question four wrong');
 }
@@ -56,9 +56,61 @@ var answerFive = prompt('Do I enjoy the season Spring?').toLowerCase();
 if(answerFive === 'no' || answerFive === 'n'){
     alert('Ya, Spring weather is undecisive');
     console.log('The user got Question five right');
-}else{
+} else {
     alert('No Spring is weird and I kinda hate it');
     console.log('The user got Question five wrong');
 }
+
+//this is question six....oh boy here we go
+var counter = 4;
+
+while (counter > 0 && answerSix != 2){
+    var answerSix = Number(prompt('How many animals would you think I have?'));
+    console.log(counter);
+    counter --;
+if(answerSix < 2 || answerSix > 2){
+    alert('Nope sorry, how about you guess again!');
+    console.log('The user got Question six wrong');
+} else if(answerSix === 2){
+    alert('How did you know?! I have 2 awesome dogs!');
+    console.log('The user got Question six right!');
+} 
+if(counter === 0){ 
+    alert('We will just move on, but I have 2 awesome dogs.');
+    console.log('The user ran out of guesses');
+}
+}
+
+//this is question seven...I got this!
+var counter = 6;
+var siobhanColors = ['teal', 'gold', 'green', 'blue', 'aqua'];
+
+while (counter > 0){
+    var answerSeven = prompt('What do you think is one of my favorite colors?').toLowerCase();
+    console.log(counter);
+    var passed;
+    for(var i = 0; i < siobhanColors.length; i++){
+    if(siobhanColors[i] === answerSeven){
+        passed = true;
+        break
+}
+}
+}
+if(passed) {
+    alert('You\'re right that is one of my favorite colors!!');
+    console.log('The user got the Question right');
+    break
+} else {
+    alert('No I\'m sorry I don\'t actually love that color...');
+    console.log('The user got the Question wrong');
+    counter --;
+}
+if(counter === 0){
+    alert('Thanks for guessing but here are some of my favorite colors: blue, aqua, teal, green, and gold!');
+}
+
+//this tells the user how many questions they got right and wrong
+var answersCollected = 
+
 
 
