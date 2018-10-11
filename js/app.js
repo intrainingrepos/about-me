@@ -8,32 +8,35 @@ var userName = prompt('What is your name?');
 
 alert('Welcome ' + userName + '! How about we get started!');
 
-//this is question one
-function questionOne() {
-    var answerOne = prompt('Do I have more than one child?').toLowerCase();
+// //this is question one
+// function questionOne() {
+//     var answerOne = prompt('Do I have more than one child?').toLowerCase();
 
-    if (answerOne === 'no' || answerOne === 'n'){
-        alert('You got it right! I only have one little girl!');
-        numCorrect ++;
-        console.log('The user got Question One correct!');
-    } else {
-        alert('Nope you are wrong, I only have one child');
-        console.log('The user got Question One wrong');
-    }
-}
-questionOne();
-
-// //this is question two
-// var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
-
-// if(answerTwo === 'yes' || answerTwo === 'y'){
-//     alert('Yay you got it right! I absolutely LOVE cows!!');
-//     numCorrect ++;
-//     console.log('The user got Question Two right');
-// } else {
-//     alert('No thats definitely not right');
-//     console.log('The user got Question Two wrong');
+//     if (answerOne === 'no' || answerOne === 'n'){
+//         alert('You got it right! I only have one little girl!');
+//         numCorrect ++;
+//         console.log('The user got Question One correct!');
+//     } else {
+//         alert('Nope you are wrong, I only have one child');
+//         console.log('The user got Question One wrong');
+//     }
 // }
+// questionOne();
+
+//this is question two
+function questionTwo() {
+    var answerTwo = prompt('Is my favorite animal a cow?').toLowerCase();
+
+    if(answerTwo === 'yes' || answerTwo === 'y'){
+        alert('Yay you got it right! I absolutely LOVE cows!!');
+        numCorrect ++;
+        console.log('The user got Question Two right');
+    } else {
+        alert('No thats definitely not right');
+        console.log('The user got Question Two wrong');
+    }
+    }
+questionTwo();
 
 // //this is question three
 // var answerThree = prompt('Is my favorite food group chocolate?').toLowerCase();
